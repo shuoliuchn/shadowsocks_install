@@ -20,7 +20,7 @@ echo "#############################################################"
 echo
 
 libsodium_file="libsodium-1.0.17"
-libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz"
+libsodium_url="https://github.com/shuoliuchn/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz"
 
 # Current folder
 cur_dir=`pwd`
@@ -162,9 +162,9 @@ pre_install(){
         exit 1
     fi
     # Set shadowsocks config password
-    echo "Please enter password for shadowsocks-python"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    echo "Please enter password for shadowsocks-python)"
+    read -p "(Default password: 1234):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="1234"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
